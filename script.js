@@ -43,13 +43,28 @@ var n = function(a,b){
     for (let i=0;i<arr.length;i++)
        total = total+arr[i];
        return total;
- }console.log(sumOf([1,2,3,4,5,6,7,8,9,]));
+ };console.log(sumOf([1,2,3,4,5,6,7,8,9,]));
 
  var sumOf1=function (arr){
     var total=0;
     for (let i=0;i<arr.length;i++)
        total = total+arr[i];
        return total;
- }console.log(sumOf1([1,2,3,4,5,6,7,8,9,]));
+ };console.log(sumOf1([1,2,3,4,5,6,7,8,9,]));
 
+ function compute(arr,n){
+    if(n==null){
+        return arr[0];
+    }else if(n<0){
+        return [];
+    }else if(n>0) {
+        
+        return arr.slice(0,n);
+       
+    }
+ };
+ console.log(compute([7,9,0,-2]));
+ console.log(compute([0,6,4,5]));
+ console.log(compute([1,2,3,4],3));
+ console.log(compute([1,2,3,4],-3));
  
